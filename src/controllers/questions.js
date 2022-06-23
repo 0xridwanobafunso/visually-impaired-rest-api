@@ -204,13 +204,6 @@ exports.getExamQuestions = async (req, res, next) => {
  * @param {*} next
  */
 exports.submitExamQuestionsAnswers = async (req, res, next) => {
-  // sample payload for answers
-  // [
-  //   { question_id: '6', answer: 'c' },
-  //   { question_id: '3', answer: 'b' },
-  //   { question_id: '1', answer: 'b' }
-  // ]
-
   let questions = await Question.findAll({ order: [['id', 'DESC']] })
   let answers = req.body
   let score = 0
