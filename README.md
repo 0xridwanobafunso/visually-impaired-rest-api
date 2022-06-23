@@ -93,7 +93,7 @@
 
 13. DELETE **{Base_URL}/questions/:id/admin?token=** | delete question by admin with the **token generated at /admin-signin** (where :id = question.id).
 
-14. GET **{Base_URL}/questions/student?token=&total=** | get questions for student with the **token generated at /student-signin** and total number of question. Scenario: Admin can decide to add 500 questions, whereas they only need 70 (&total=70). The 500 questions are shuffle and 70 are picked with randomly from all the 500 questions.
+14. GET **{Base_URL}/questions/student?token=&total=** | get questions for student with the **token generated at /student-signin** with n numbers of questions (total=n). Scenario: Admin can decide to add 500 questions, whereas they only need 70 (&total=70). The 500 questions are shuffle and 70 are picked with randomly from all the 500 questions.
 
 15. POST **{Base_URL}/questions/student?token=** | submit student answers to backend to mark against answers in database with the **token generated at /student-signin** and save the score in scores table. Request payload
 
