@@ -5,8 +5,8 @@
 1. Install **XAMMP** (start Apache and MYSQL) or MYSQL workbench (root@127.0.0.1:3306)
 2. Install **Node.js**
 3. Clone **this repo**
-4. Go to 127.0.0.1/phpmyadmin and create new database named voice_based.
-5. Import the voice_based.sql in this root repo into the newly created database.
+4. Go to 127.0.0.1/phpmyadmin and create new database named voice_exam.
+5. Import the voice_exam.sql in this root repo into the newly created database.
 6. Install dependencies
 
    `npm run install`
