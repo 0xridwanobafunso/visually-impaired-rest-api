@@ -105,6 +105,6 @@
     ]
     ```
 
-16. GET **{Base_URL}/scores/student** | get scores by admin with the **token generated at /admin-signin**.
+16. GET **{Base_URL}/scores/student?token=** | get students scores by admin with the **token generated at /admin-signin**.
 
-17. GET **{Base_URL}/scores/student/:id/attempts** | get total attempts by student with the **token generated at /admin-signin** (where :id = account.id)
+17. GET **{Base_URL}/scores/student/:id/attempts?token=** | get total attempts by a student with the **token generated at /admin-signin** (where :id = account.id)
