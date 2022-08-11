@@ -13,6 +13,7 @@ const accounts = require('./routes/accounts')
 const auths = require('./routes/auths')
 const questions = require('./routes/questions')
 const scores = require('./routes/scores')
+const search = require('./routes/search')
 
 // middlewares
 const errorHandler = require('./middlewares/errorHandler')
@@ -57,6 +58,7 @@ app.use('/auths', auths)
 app.use('/accounts', accounts)
 app.use('/questions', questions)
 app.use('/scores', scores)
+app.use('/search', search)
 
 // global error handler
 app.use(errorHandler)
